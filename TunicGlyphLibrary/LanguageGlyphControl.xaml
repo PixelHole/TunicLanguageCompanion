@@ -1,0 +1,99 @@
+﻿<UserControl x:Class="TunicGlyphLibrary.LanguageGlyphControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TunicGlyphLibrary"
+             mc:Ignorable="d" 
+             d:DesignHeight="310" d:DesignWidth="200">
+    <Grid>
+        <Canvas Name="canvas" Width="200" Height="304">
+            <Rectangle Panel.ZIndex="18" Name= "base" Width="200" Height="10" Fill="LightGray" Canvas.Top="115" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Rectangle Name="BottomMiddle" Tag="10" Width="10" Height="121" Fill="Gray" Canvas.Top="145" RadiusX="5" RadiusY="5" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="95" MouseLeftButtonDown="GlyphPartClick" MouseEnter="GlyphPartMouseEnter" MouseLeave="GlyphPartMouseLeave"/>
+            <Rectangle Name="TopMiddle" Tag="1" Width="10" Height="125" Fill="Gray" RadiusX="5" RadiusY="5" Canvas.Left="95" HorizontalAlignment="Center" VerticalAlignment="Top" MouseLeftButtonDown="GlyphPartClick" MouseEnter="GlyphPartMouseEnter" MouseLeave="GlyphPartMouseLeave"/>
+            <Rectangle Name="BottomLeft" Tag="6" Width="10" Height="66" Fill="Gray" Canvas.Top="145" RadiusX="5" RadiusY="5" HorizontalAlignment="Center" VerticalAlignment="Top" MouseLeftButtonDown="GlyphPartClick" MouseEnter="GlyphPartMouseEnter" MouseLeave="GlyphPartMouseLeave"/>
+            <Rectangle Name="TopLeft"  Tag="3" Width="10" Height="67" Fill="Gray" Canvas.Top="58" RadiusX="5" RadiusY="5" HorizontalAlignment="Center" VerticalAlignment="Top" MouseLeftButtonDown="GlyphPartClick" MouseEnter="GlyphPartMouseEnter" MouseLeave="GlyphPartMouseLeave"/>
+            <Rectangle Name="TopTopLeft" Tag="0" Width="10" Height="119" Fill="Gray" Canvas.Top="-27" RadiusX="5" RadiusY="5" Canvas.Left="47" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="GlyphPartClick" MouseEnter="GlyphPartMouseEnter" MouseLeave="GlyphPartMouseLeave">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="60"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle Name="TopBottomLeft" Tag="4" Width="10" Height="119" Fill="Gray" Canvas.Top="29" RadiusX="5" RadiusY="5" Canvas.Left="47" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center" MouseLeftButtonDown="GlyphPartClick" MouseEnter="GlyphPartMouseEnter" MouseLeave="GlyphPartMouseLeave">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="120"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle Name="BottomTopLeft" Tag="7" Width="10" Height="119" Fill="Gray" Canvas.Top="118" RadiusX="5" RadiusY="5" Canvas.Left="48" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center" MouseLeftButtonDown="GlyphPartClick" MouseEnter="GlyphPartMouseEnter" MouseLeave="GlyphPartMouseLeave">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="59.73"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle Name="BottomBottomLeft" Tag="9" Width="10" Height="119" Fill="Gray" Canvas.Top="174" RadiusX="5" RadiusY="5" Canvas.Left="47" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center" MouseLeftButtonDown="GlyphPartClick" MouseEnter="GlyphPartMouseEnter" MouseLeave="GlyphPartMouseLeave">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="120"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle Name="BottomBottomRight" Tag="11" Width="10" Height="119" Fill="Gray" Canvas.Top="174" RadiusX="5" RadiusY="5" Canvas.Left="143" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center" MouseLeftButtonDown="GlyphPartClick" MouseEnter="GlyphPartMouseEnter" MouseLeave="GlyphPartMouseLeave">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="59.73"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle Name="BottomTopRight" Tag="8" Width="10" Height="119" Fill="Gray" Canvas.Top="118" RadiusX="5" RadiusY="5" Canvas.Left="143" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center" MouseLeftButtonDown="GlyphPartClick" MouseEnter="GlyphPartMouseEnter" MouseLeave="GlyphPartMouseLeave">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="120"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle Name="TopBottomRight" Tag="5" Width="10" Height="119" Fill="Gray" Canvas.Top="29" RadiusX="5" RadiusY="5" Canvas.Left="143" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center" MouseLeftButtonDown="GlyphPartClick" MouseEnter="GlyphPartMouseEnter" MouseLeave="GlyphPartMouseLeave">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="59.73"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle Name="TopTopRight" Tag="2" Width="10" Height="119" Fill="Gray" Canvas.Top="-27" RadiusX="5" RadiusY="5" Canvas.Left="143" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center" MouseLeftButtonDown="GlyphPartClick" MouseEnter="GlyphPartMouseEnter" MouseLeave="GlyphPartMouseLeave">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="120"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Ellipse Name="Circle" Tag="12" Canvas.Left="75" Canvas.Top="257" HorizontalAlignment="Center" Height="50" Width="50" Stroke="Gray" StrokeThickness="10" VerticalAlignment="Top" MouseLeftButtonDown="GlyphPartClick" MouseEnter="GlyphPartMouseEnter" MouseLeave="GlyphPartMouseLeave"/>
+        </Canvas>
+    </Grid>
+</UserControl>
