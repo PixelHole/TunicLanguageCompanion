@@ -1,6 +1,8 @@
 ﻿
 
-FM:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\LanguageGlyphControl.xaml;;
-FM:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\LanguageWordControl.xaml;;
-FM:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\MainWindow.xaml;;
+FM:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\Windows\Elements\DefinitionPanel.xaml;;
+FM:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\Windows\Elements\LanguageGlyphControl.xaml;;
+FM:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\Windows\Elements\LanguageWordControl.xaml;;
+FM:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\Windows\Elements\WordLibraryItem.xaml;;
+FM:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\Windows\MainWindow.xaml;;
 

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\App.xaml
-3-2058276241
+5-1119296387
 1509281679
-71598342861
-9-1753732648
-LanguageGlyphControl.xaml;LanguageWordControl.xaml;MainWindow.xaml;
+11-883934103
+114-1359323025
+Windows\Elements\DefinitionPanel.xaml;Windows\Elements\LanguageGlyphControl.xaml;Windows\Elements\LanguageWordControl.xaml;Windows\Elements\WordLibraryItem.xaml;Windows\MainWindow.xaml;
 
-True
+False
 

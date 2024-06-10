@@ -10,6 +10,10 @@
     <Viewbox Stretch="Uniform" Margin="5, 5, 0 ,0">
         <StackPanel Name="glyphStack" Orientation="Horizontal" Margin="50, 50">
             <local:LanguageGlyphControl/>
+            <local:LanguageGlyphControl/>
+            <local:LanguageGlyphControl/>
+            <local:LanguageGlyphControl/>
+
         </StackPanel>
     </Viewbox>
 </UserControl>

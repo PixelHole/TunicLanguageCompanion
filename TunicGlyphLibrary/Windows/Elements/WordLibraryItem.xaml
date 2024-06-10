@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="TunicGlyphLibrary.Windows.Elements.WordLibraryItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:TunicGlyphLibrary.Windows.Elements"
+             mc:Ignorable="d"
+             Background="Transparent"
+             d:DesignHeight="50" d:DesignWidth="200"
+             MaxHeight="50" MaxWidth="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.Column="0" Grid.ColumnSpan="2" Fill="White" Margin="0" RadiusX="10" RadiusY="10"></Rectangle>
+        <Rectangle Grid.Column="0" Fill="Gainsboro" Margin="5" RadiusX="10" RadiusY="10"></Rectangle>
+        <Viewbox Margin="5" Stretch="Uniform">
+            <local:LanguageWordControl Grid.Column="0" Margin="5" Panel.ZIndex="1"/>
+        </Viewbox>
+    </Grid>
+</UserControl>
