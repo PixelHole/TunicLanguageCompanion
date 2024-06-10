@@ -1,6 +1,6 @@
 ﻿namespace TunicGlyphLibrary.Library
 {
-    public class Word
+    public class WordLibrary
     {
         
     }
