@@ -18,8 +18,8 @@
         <Viewbox>
             <local:LanguageWordControl x:Name="WordDisplay" GlyphActiveBrush="Black" GlyphInactiveBrush="Gainsboro" KeyboardEditingEnabled="False" MouseEditingEnabled="False" Margin="5" Panel.ZIndex="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         </Viewbox>
-        <TextBlock Name="DefinitionTextBlock" Grid.Column="1" Grid.ColumnSpan="2" TextAlignment="Left" VerticalAlignment="Center"></TextBlock>
-        <StackPanel Name="ControlPanel" Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" Background="Aquamarine">
+        <TextBlock Name="DefinitionTextBlock" Grid.Column="1"  TextAlignment="Left" VerticalAlignment="Center"></TextBlock>
+        <StackPanel Name="ControlPanel" Visibility="Hidden" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" Background="Aquamarine">
             <Button Name="EditBtn" Margin="5" VerticalAlignment="Center" Click="EditBtn_OnClick">E</Button>
             <Button Name="DeleteBtn" Margin="5" VerticalAlignment="Center" Click="DeleteBtn_OnClick">X</Button>
         </StackPanel>

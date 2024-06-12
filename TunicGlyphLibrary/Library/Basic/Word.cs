@@ -21,12 +21,12 @@ namespace TunicGlyphLibrary.Library
         public void SetDefinitions(List<string> definitions)
         {
             Definitions.Clear();
-            definitions.ForEach(definition => Definitions.Add(definition));
+            definitions.ForEach(definition => Definitions.Add(new string(definition.ToCharArray())));
         }
         public void SetGlyphs(List<Glyph> glyphs)
         {
             Glyphs.Clear();
-            glyphs.ForEach(glyph => Glyphs.Add(glyph));
+            glyphs.ForEach(glyph => Glyphs.Add(new Glyph(glyph)));
         }
 
 

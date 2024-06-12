@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -97,6 +98,13 @@ namespace TunicGlyphLibrary.Windows.Elements
         {
             LanguageGlyphControl newControl = new LanguageGlyphControl(glyph, MouseEditingEnabled, GlyphActiveBrush,
                 GlyphInactiveBrush, GlyphHighlightBrush, GlyphBackgroundBrush);
+            
+            if (glyphStack.Children.Count > 0)
+            {
+                // this is to make the glyphs look neater when arranged in a word.
+                // the the -8 value is chosen it looked good this way
+                newControl.Margin = new Thickness(-8, 0, 0, 0);
+            }
 
             glyphStack.Children.Add(newControl);
         }

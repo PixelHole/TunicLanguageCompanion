@@ -16,14 +16,19 @@ namespace TunicGlyphLibrary.Library
         public static void AddWord(Word word)
         {
             if (Words.Contains(word)) return;
-            OnWordAdded?.Invoke(word);
             Words.Add(word);
+            OnWordAdded?.Invoke(word);
         }
         public static void RemoveWord(Word word)
         {
             if (!Words.Contains(word)) return;
             Words.Remove(word);   
             OnWordRemoved?.Invoke(word);
+        }
+
+        private static Word DuplicateWord(Word word)
+        {
+            return new Word();
         }
     }
 }

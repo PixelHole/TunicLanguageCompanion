@@ -6,6 +6,23 @@ namespace TunicGlyphLibrary.Library
     {
         private bool[] Values { get; } = new bool[13];
 
+
+        public Glyph()
+        {
+            
+        }
+        public Glyph(bool[] values)
+        {
+            
+        }
+        public Glyph(Glyph glyph)
+        {
+            for (int i = 0; i < 13; i++)
+            {
+                Values[i] = glyph.Values[i];
+            }
+        }
+        
         public void SetValue(int index, bool value) => Values[index] = value;
         public bool GetValue(int index) => Values[index];
         public bool SwitchValue(int index)

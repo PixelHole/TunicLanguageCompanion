@@ -5,8 +5,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:TunicGlyphLibrary.Windows.Elements"
              mc:Ignorable="d"
+             Background="Transparent"
              d:DesignHeight="600" d:DesignWidth="300">
-    <ScrollViewer Background="RosyBrown">
-        <StackPanel Name="WordLibraryList" Orientation="Vertical"></StackPanel>
-    </ScrollViewer>
+    <Grid>
+        <Rectangle Margin="0" Fill="White" Opacity="0.25" RadiusX="10" RadiusY="10"></Rectangle>
+        <ScrollViewer>
+            <StackPanel Name="WordLibraryList" Orientation="Vertical"></StackPanel>
+        </ScrollViewer>
+    </Grid>
 </UserControl>
