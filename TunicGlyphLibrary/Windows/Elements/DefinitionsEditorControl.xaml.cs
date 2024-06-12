@@ -6,11 +6,11 @@ using TunicGlyphLibrary.Library;
 
 namespace TunicGlyphLibrary.Windows.Elements
 {
-    public partial class DefinitionsEditor : UserControl
+    public partial class DefinitionsEditorControl : UserControl
     {
         public List<string> Definitions { get; private set; } = new List<string>();
 
-        public DefinitionsEditor()
+        public DefinitionsEditorControl()
         {
             InitializeComponent();
         }
