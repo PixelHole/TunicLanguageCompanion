@@ -48,7 +48,7 @@ namespace TunicGlyphLibrary.Windows.Elements
 
             AddDefinitionBtn.IsEnabled = false;
         }
-        private void DefinitionPanelCloseHandler(string definition)
+        private void DefinitionPanelDeleteHandler(string definition)
         {
             RemoveDefinition(definition);
         }
@@ -76,12 +76,14 @@ namespace TunicGlyphLibrary.Windows.Elements
         private void CreateDefinitionPanel(string definition)
         {
             DefinitionPanel defPanel = new DefinitionPanel(definition);
-            defPanel.OnCloseRequest += DefinitionPanelCloseHandler;
+            defPanel.OnDeleteRequest += DefinitionPanelDeleteHandler;
             DefinitionsStack.Children.Add(defPanel);
         }
         private void RemoveDefinitionPanel(int index)
         {
-            DefinitionsStack.Children.RemoveAt(index);
+            var panel = (DefinitionPanel)DefinitionsStack.Children[index];
+            panel.OnDeleteRequest -= DefinitionPanelDeleteHandler;
+            DefinitionsStack.Children.Remove(panel);
         }
     }
 }

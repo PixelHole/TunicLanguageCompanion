@@ -6,17 +6,22 @@
              xmlns:local="clr-namespace:TunicGlyphLibrary.Windows.Elements"
              mc:Ignorable="d"
              Background="Transparent"
-             d:DesignHeight="50" d:DesignWidth="200"
-             MaxHeight="50" MaxWidth="300">
-    <Grid>
+             d:DesignWidth="250"
+             Height="60"
+             MaxHeight="100">
+    <Grid Name="Frame" Background="Transparent" MouseEnter="Frame_OnMouseEnter" MouseLeave="Frame_OnMouseLeave">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle Grid.Column="0" Grid.ColumnSpan="2" Fill="White" Margin="0" RadiusX="10" RadiusY="10"></Rectangle>
-        <Rectangle Grid.Column="0" Fill="Gainsboro" Margin="5" RadiusX="10" RadiusY="10"></Rectangle>
-        <Viewbox Margin="5" Stretch="Uniform">
-            <local:LanguageWordControl Grid.Column="0" Margin="5" Panel.ZIndex="1"/>
+        <Rectangle Grid.Column="0" Grid.ColumnSpan="3" Fill="White" Margin="0" RadiusX="10" RadiusY="10"></Rectangle>
+        <Viewbox>
+            <local:LanguageWordControl x:Name="WordDisplay" GlyphActiveBrush="Black" GlyphInactiveBrush="Gainsboro" KeyboardEditingEnabled="False" MouseEditingEnabled="False" Margin="5" Panel.ZIndex="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         </Viewbox>
+        <TextBlock Name="DefinitionTextBlock" Grid.Column="1" Grid.ColumnSpan="2" TextAlignment="Left" VerticalAlignment="Center"></TextBlock>
+        <StackPanel Name="ControlPanel" Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" Background="Aquamarine">
+            <Button Name="EditBtn" Margin="5" VerticalAlignment="Center" Click="EditBtn_OnClick">E</Button>
+            <Button Name="DeleteBtn" Margin="5" VerticalAlignment="Center" Click="DeleteBtn_OnClick">X</Button>
+        </StackPanel>
     </Grid>
 </UserControl>

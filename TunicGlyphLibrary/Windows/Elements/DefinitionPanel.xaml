@@ -5,8 +5,18 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:TunicGlyphLibrary.Windows.Elements"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300">
+             Background="Transparent"
+             d:DesignHeight="30" d:DesignWidth="30"
+             Margin="5,0,0,5"
+             MaxHeight="30">
+    
     <Grid>
-        
+        <Rectangle Fill="White" RadiusX="10" RadiusY="10" Margin="0"></Rectangle>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Name="DefinitionText" Margin="10, 0, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+            <Button Name="CloseBtn" Margin="0, 10, 10, 10" Width="30" Height="30" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Right" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="CloseBtn_OnClick">
+                X
+            </Button>
+        </StackPanel>
     </Grid>
 </UserControl>

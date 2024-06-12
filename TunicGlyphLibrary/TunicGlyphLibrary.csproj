@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -41,39 +44,62 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="Unglide, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EdCanHack.Unglide.2.0.0.0\lib\portable-net45+win+wpa81+wp80\Unglide.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
-    <Page Include="LanguageGlyphControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="LanguageWordControl.xaml" />
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="LanguageGlyphControl.xaml.cs">
+    <Compile Include="Library\Basic\Glyph.cs" />
+    <Compile Include="Library\Basic\Word.cs" />
+    <Compile Include="Library\SaveFileManager.cs" />
+    <Compile Include="Library\WordLibrary.cs" />
+    <Compile Include="Windows\Editors\WordEditor.xaml.cs">
+      <DependentUpon>WordEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Elements\DefinitionPanel.xaml.cs">
+      <DependentUpon>DefinitionPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Elements\DefinitionsEditor.xaml.cs">
+      <DependentUpon>DefinitionsEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Elements\LanguageGlyphControl.xaml.cs">
       <DependentUpon>LanguageGlyphControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LanguageWordControl.xaml.cs">
+    <Compile Include="Windows\Elements\LanguageWordControl.xaml.cs">
       <DependentUpon>LanguageWordControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Library\Glyph.cs" />
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="Windows\Elements\WordLibraryDisplay.xaml.cs">
+      <DependentUpon>WordLibraryDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Elements\WordLibraryItem.xaml.cs">
+      <DependentUpon>WordLibraryItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="KeyboardMapping.cs" />
+    <Page Include="Windows\Editors\WordEditor.xaml" />
+    <Page Include="Windows\Elements\DefinitionPanel.xaml" />
+    <Page Include="Windows\Elements\DefinitionsEditor.xaml" />
+    <Page Include="Windows\Elements\LanguageGlyphControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Elements\LanguageWordControl.xaml" />
+    <Page Include="Windows\Elements\WordLibraryDisplay.xaml" />
+    <Page Include="Windows\Elements\WordLibraryItem.xaml" />
+    <Page Include="Windows\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -91,9 +117,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

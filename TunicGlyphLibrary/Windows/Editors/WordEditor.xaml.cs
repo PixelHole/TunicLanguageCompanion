@@ -3,7 +3,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using TunicGlyphLibrary.Library;
 
-namespace TunicGlyphLibrary.Windows.Elements.Editors
+namespace TunicGlyphLibrary.Windows.Editors
 {
     public partial class WordEditor : UserControl
     {
