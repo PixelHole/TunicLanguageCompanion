@@ -60,23 +60,23 @@
     <Compile Include="Library\Basic\Word.cs" />
     <Compile Include="Library\SaveFileManager.cs" />
     <Compile Include="Library\WordLibrary.cs" />
-    <Compile Include="Windows\Editors\WordEditor.xaml.cs">
-      <DependentUpon>WordEditor.xaml</DependentUpon>
+    <Compile Include="Windows\Editors\WordEditorControl.xaml.cs">
+      <DependentUpon>WordEditorControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\Elements\DefinitionPanel.xaml.cs">
       <DependentUpon>DefinitionPanel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Elements\DefinitionsEditor.xaml.cs">
-      <DependentUpon>DefinitionsEditor.xaml</DependentUpon>
+    <Compile Include="Windows\Elements\GlyphCountMinusButton.xaml.cs">
+      <DependentUpon>GlyphCountMinusButton.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Elements\LanguageGlyphControl.xaml.cs">
-      <DependentUpon>LanguageGlyphControl.xaml</DependentUpon>
+    <Compile Include="Windows\Elements\GlyphCountPlusButton.xaml.cs">
+      <DependentUpon>GlyphCountPlusButton.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Elements\LanguageWordControl.xaml.cs">
-      <DependentUpon>LanguageWordControl.xaml</DependentUpon>
+    <Compile Include="Windows\Elements\StyledButton.xaml.cs">
+      <DependentUpon>StyledButton.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Elements\WordLibraryDisplay.xaml.cs">
-      <DependentUpon>WordLibraryDisplay.xaml</DependentUpon>
+    <Compile Include="Windows\Elements\StyledTextBox.xaml.cs">
+      <DependentUpon>StyledTextBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\Elements\WordLibraryItem.xaml.cs">
       <DependentUpon>WordLibraryItem.xaml</DependentUpon>
@@ -86,20 +86,36 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="KeyboardMapping.cs" />
-    <Page Include="Windows\Editors\WordEditor.xaml" />
+    <Compile Include="Windows\Panels\DefinitionsEditorControl.xaml.cs">
+      <DependentUpon>DefinitionsEditorControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Panels\LanguageGlyphControl.xaml.cs">
+      <DependentUpon>LanguageGlyphControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Panels\LanguageWordControl.xaml.cs">
+      <DependentUpon>LanguageWordControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Panels\WordLibraryDisplay.xaml.cs">
+      <DependentUpon>WordLibraryDisplay.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Windows\Editors\WordEditorControl.xaml" />
     <Page Include="Windows\Elements\DefinitionPanel.xaml" />
-    <Page Include="Windows\Elements\DefinitionsEditor.xaml" />
-    <Page Include="Windows\Elements\LanguageGlyphControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\Elements\LanguageWordControl.xaml" />
-    <Page Include="Windows\Elements\WordLibraryDisplay.xaml" />
+    <Page Include="Windows\Elements\GlyphCountMinusButton.xaml" />
+    <Page Include="Windows\Elements\GlyphCountPlusButton.xaml" />
+    <Page Include="Windows\Elements\StyledButton.xaml" />
+    <Page Include="Windows\Elements\StyledTextBox.xaml" />
     <Page Include="Windows\Elements\WordLibraryItem.xaml" />
     <Page Include="Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Windows\Panels\DefinitionsEditorControl.xaml" />
+    <Page Include="Windows\Panels\LanguageGlyphControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Panels\LanguageWordControl.xaml" />
+    <Page Include="Windows\Panels\WordLibraryDisplay.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -121,6 +137,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.xaml" />
+    <Content Include="Resources\background.png" />
+    <Content Include="Resources\Button.png" />
+    <Content Include="Resources\ButtonClick.png" />
+    <Content Include="Resources\ButtonHover.png" />
+    <Content Include="Resources\MinusButton.png" />
+    <Content Include="Resources\MinusButtonClick.png" />
+    <Content Include="Resources\MinusButtonHover.png" />
+    <Content Include="Resources\PlusButton.png" />
+    <Content Include="Resources\PlusButtonClick.png" />
+    <Content Include="Resources\PlusButtonHover.png" />
+    <Content Include="Resources\TextBox.png" />
+    <Content Include="Resources\TextBoxHover.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

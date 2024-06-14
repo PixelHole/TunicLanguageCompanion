@@ -38,7 +38,7 @@ namespace TunicGlyphLibrary.Windows.Elements
 
         private void UpdateDisplay()
         {
-            WordDisplay.SetGlyphs(Word.Glyphs);
+            WordDisplay.Glyphs = Word.Glyphs;
             if (Word.Definitions.Count == 0)
             {
                 DefinitionTextBlock.Text = "No Definition Given";

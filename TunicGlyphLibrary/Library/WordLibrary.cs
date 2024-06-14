@@ -7,28 +7,44 @@ namespace TunicGlyphLibrary.Library
     public static class WordLibrary
     {
         public delegate void WordAdded(Word addedWord);
-        public delegate void WordRemoved(Word removedWord);
+        public delegate void WordRemoved(int index);
+        public delegate void WordEdited(int index);
+        public delegate void RequestWordEdit(Word word);
         public static event WordAdded OnWordAdded;
-        public static event WordAdded OnWordRemoved;
+        public static event WordRemoved OnWordRemoved;
+        public static event WordEdited OnWordEdited;
+        public static event RequestWordEdit OnRequestWordEdit;
         
         public static List<Word> Words { get; private set; } = new List<Word>();
 
-        public static void AddWord(Word word)
+        public static bool AddWord(Word word)
         {
-            if (Words.Contains(word)) return;
+            if (Words.Contains(word)) return false;
             Words.Add(word);
             OnWordAdded?.Invoke(word);
+            return true;
         }
         public static void RemoveWord(Word word)
         {
             if (!Words.Contains(word)) return;
+            int index = Words.IndexOf(word);
             Words.Remove(word);   
-            OnWordRemoved?.Invoke(word);
+            OnWordRemoved?.Invoke(index);
+        }
+        public static void EditWord(Word word, Word newWord)
+        {
+            int index = Words.IndexOf(word);
+            Words[index] = newWord;
+            OnWordEdited?.Invoke(index);
         }
 
-        private static Word DuplicateWord(Word word)
+        public static void DeleteWordRequestHandler(Word word)
         {
-            return new Word();
+            RemoveWord(word);
+        }
+        public static void EditWordRequestHandler(Word word)
+        {
+            OnRequestWordEdit?.Invoke(word);
         }
     }
 }

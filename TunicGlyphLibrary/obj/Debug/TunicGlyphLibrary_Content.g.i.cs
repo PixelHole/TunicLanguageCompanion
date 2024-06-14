@@ -9,5 +9,17 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("app.xaml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/background.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/button.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/buttonclick.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/buttonhover.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/minusbutton.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/minusbuttonclick.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/minusbuttonhover.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/plusbutton.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/plusbuttonclick.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/plusbuttonhover.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/textbox.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/textboxhover.png")]
 
 

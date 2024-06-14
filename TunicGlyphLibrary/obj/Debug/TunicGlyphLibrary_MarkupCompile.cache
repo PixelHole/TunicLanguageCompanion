@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\App.xaml
-8-1983923401
-1509281679
-161317366450
+12774613581
+13-498944341
+20491530092
 115-1554493538
-Windows\Editors\WordEditorControl.xaml;Windows\Elements\DefinitionPanel.xaml;Windows\Elements\DefinitionsEditorControl.xaml;Windows\Elements\LanguageGlyphControl.xaml;Windows\Elements\LanguageWordControl.xaml;Windows\Elements\WordLibraryDisplay.xaml;Windows\Elements\WordLibraryItem.xaml;Windows\MainWindow.xaml;
+Windows\Editors\WordEditorControl.xaml;Windows\Elements\DefinitionPanel.xaml;Windows\Elements\GlyphCountMinusButton.xaml;Windows\Elements\GlyphCountPlusButton.xaml;Windows\Elements\StyledButton.xaml;Windows\Elements\StyledTextBox.xaml;Windows\Elements\WordLibraryItem.xaml;Windows\MainWindow.xaml;Windows\Panels\DefinitionsEditorControl.xaml;Windows\Panels\LanguageGlyphControl.xaml;Windows\Panels\LanguageWordControl.xaml;Windows\Panels\WordLibraryDisplay.xaml;
 
-True
+False
 

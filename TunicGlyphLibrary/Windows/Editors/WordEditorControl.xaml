@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="TunicGlyphLibrary.Windows.Editors.WordEditor"
+﻿<UserControl x:Class="TunicGlyphLibrary.Windows.Editors.WordEditorControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -6,14 +6,12 @@
              xmlns:elements="clr-namespace:TunicGlyphLibrary.Windows.Elements"
              mc:Ignorable="d"
              Background="Transparent"
-             d:DesignHeight="400" d:DesignWidth="450">
+             d:DesignHeight="400" d:DesignWidth="500">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-            
-        <Rectangle Panel.ZIndex = "0" Fill="White" Opacity="0.25" Margin="0" RadiusX="10" RadiusY="10" Grid.RowSpan="2"></Rectangle>
         <Grid Background="Transparent" Grid.Row="0" MouseEnter="WordEditorPanel_OnMouseEnter" MouseLeave="WordEditorPanel_OnMouseLeave">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -22,13 +20,13 @@
             </Grid.ColumnDefinitions>
             <elements:LanguageWordControl x:Name="WordDisplay" Grid.Column="1" Panel.ZIndex="1"></elements:LanguageWordControl>
                 
-            <Button Name="RemoveGlyphBtn" Grid.Column="0" Width="50" Height="150" Click="RemoveGlyphBtn_OnClick"> - </Button>
-            <Button Name="AddGlyphBtn" Grid.Column="2" Width="50" Height="150" Click="AddGlyphBtn_OnClick">+</Button>
+            <elements:GlyphCountMinusButton x:Name="RemoveGlyphBtn" Grid.Column="0" Click="RemoveGlyphBtn_OnClick"></elements:GlyphCountMinusButton>
+            <elements:GlyphCountPlusButton x:Name="AddGlyphBtn" Grid.Column="2" Click="AddGlyphBtn_OnClick"></elements:GlyphCountPlusButton>
             <Button Name="GlyphSearchBtn" Visibility="Hidden" Grid.Column="2" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10">S</Button>
         </Grid>
         <Grid Grid.Row="1" Background="Transparent" MouseEnter="DefinitionEditorGrid_OnMouseEnter" MouseLeave="DefinitionEditorGrid_OnMouseLeave">
             <Button Panel.ZIndex="20" Name="DefinitionSearchBtn" Visibility="Hidden" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10">S</Button>
-            <elements:DefinitionsEditor x:Name="DefinitionsEditor"></elements:DefinitionsEditor>
+            <elements:DefinitionsEditorControl x:Name="DefinitionsEditor"></elements:DefinitionsEditorControl>
         </Grid>
     </Grid>
 </UserControl>

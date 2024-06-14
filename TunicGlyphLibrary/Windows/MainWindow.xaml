@@ -6,21 +6,28 @@
         xmlns:elements="clr-namespace:TunicGlyphLibrary.Windows.Elements"
         xmlns:editors="clr-namespace:TunicGlyphLibrary.Windows.Editors"
         mc:Ignorable="d"
-        Background="Black"
-        Title="MainWindow" Height="600" Width="950">
+        Background="Transparent"
+        Title="MainWindow" Height="700" Width="950">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/Resources/background.png" Stretch="Fill"/>
+        </Grid.Background>
+        
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
             <ColumnDefinition Width="5*"/>
-            <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
 
-        <Grid Column="0">
+        <Grid Column="0" Margin="40, 15, 0, 15">
             <Grid.RowDefinitions>
                 <RowDefinition Height="10*"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <editors:WordEditor x:Name="WordEditor" Grid.Column="0"></editors:WordEditor>
-            <Button Grid.Row="1" Click="SaveToLibraryBtn_OnClick">Done</Button>
+            <editors:WordEditorControl x:Name="WordEditor" Grid.Column="0"></editors:WordEditorControl>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Grid.Row="1" Click="SaveToLibraryBtn_OnClick">Done</Button>
+                <Button>Cancel</Button>
+            </StackPanel>
         </Grid>
         <elements:WordLibraryDisplay x:Name="WordLibraryList" Grid.Column="1"></elements:WordLibraryDisplay>
     </Grid>

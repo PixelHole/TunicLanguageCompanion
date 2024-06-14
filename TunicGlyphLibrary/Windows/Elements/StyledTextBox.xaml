@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="TunicGlyphLibrary.Windows.Elements.StyledTextBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:TunicGlyphLibrary.Windows.Elements"
+             mc:Ignorable="d"
+             Background="Transparent"
+             Height="45" d:DesignWidth="300">
+    <TextBox Name="TextBox" BorderThickness="0" FontSize="29" FontFamily="Times New Roman" VerticalContentAlignment="Center" Grid.Column="0" BorderBrush="Transparent" TextChanged="TextBox_OnTextChanged">
+        <TextBox.Style>
+            <Style TargetType="{x:Type TextBox}">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <ImageBrush ImageSource="../../Resources/TextBox.png"/>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsKeyboardFocused" Value="True">
+                        <Setter Property="Background">
+                            <Setter.Value>
+                                <ImageBrush ImageSource="../../Resources/TextBoxHover.png"/>
+                            </Setter.Value>
+                        </Setter>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </TextBox.Style>
+    </TextBox>
+</UserControl>
