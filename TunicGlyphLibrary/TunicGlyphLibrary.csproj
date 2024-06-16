@@ -139,14 +139,14 @@
     <Content Include="App.xaml" />
     <Content Include="Resources\background.png" />
     <Content Include="Resources\Button.png" />
-    <Content Include="Resources\ButtonClick.png" />
-    <Content Include="Resources\ButtonHover.png" />
+    <Content Include="Resources\ButtonFramw.png" />
     <Content Include="Resources\MinusButton.png" />
     <Content Include="Resources\MinusButtonClick.png" />
     <Content Include="Resources\MinusButtonHover.png" />
     <Content Include="Resources\PlusButton.png" />
     <Content Include="Resources\PlusButtonClick.png" />
     <Content Include="Resources\PlusButtonHover.png" />
+    <Content Include="Resources\SideDecoration.png" />
     <Content Include="Resources\TextBox.png" />
     <Content Include="Resources\TextBoxHover.png" />
   </ItemGroup>

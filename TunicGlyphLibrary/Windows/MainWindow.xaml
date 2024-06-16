@@ -14,21 +14,23 @@
         </Grid.Background>
         
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-
-        <Grid Column="0" Margin="40, 15, 0, 15">
+        
+        <Image Grid.Column="1" Margin="0, 40, 0, 40" HorizontalAlignment="Right" Stretch="Uniform" Source="../../Resources/SideDecoration.png"></Image>
+        
+        <Grid Column="0" Margin="28, 31, 10, 35">
             <Grid.RowDefinitions>
                 <RowDefinition Height="10*"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <editors:WordEditorControl x:Name="WordEditor" Grid.Column="0"></editors:WordEditorControl>
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Grid.Row="1" Click="SaveToLibraryBtn_OnClick">Done</Button>
+                <Button Click="SaveToLibraryBtn_OnClick">Done</Button>
                 <Button>Cancel</Button>
             </StackPanel>
         </Grid>
-        <elements:WordLibraryDisplay x:Name="WordLibraryList" Grid.Column="1"></elements:WordLibraryDisplay>
+        <elements:WordLibraryDisplay Margin="5, 31, 85, 35" x:Name="WordLibraryList" Grid.Column="1"></elements:WordLibraryDisplay>
     </Grid>
 </Window>

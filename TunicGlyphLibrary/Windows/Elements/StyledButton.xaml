@@ -3,44 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:local="clr-namespace:TunicGlyphLibrary.Windows.Elements"
              mc:Ignorable="d"
              Background="Transparent"
-             Height="45" d:DesignWidth="200">
-    <Button Name="Button" BorderBrush="Transparent" Click="Button_OnClick">
-                <Button.Style>
-                    <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background">
-                            <Setter.Value>
-                                <ImageBrush ImageSource="../../Resources/Button.png"></ImageBrush>
-                            </Setter.Value>
-                        </Setter>
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="{x:Type Button}">
-                                    <Border Background="{TemplateBinding Background}">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                    </Border>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                        <Style.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background">
-                                    <Setter.Value>
-                                        <ImageBrush ImageSource="../../Resources/ButtonHover.png"></ImageBrush>
-                                    </Setter.Value>
-                                </Setter>
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter Property="Background">
-                                    <Setter.Value>
-                                        <ImageBrush ImageSource="../../Resources/ButtonClick.png"></ImageBrush>
-                                    </Setter.Value>
-                                </Setter>
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </Button.Style>
-            </Button>
+             d:DesignHeight="45" d:DesignWidth="115">
+    <Grid Background="Transparent" MouseEnter="BackGround_OnMouseEnter" MouseLeave="BackGround_OnMouseLeave" MouseDown="BackGround_OnMouseDown" MouseUp="BackGround_OnMouseUp">
+        <Grid Name="MainBody">
+            <Rectangle x:Name="BackGround" Margin="5" Fill="White"/>
+            <Rectangle>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="../../Resources/ButtonFramw.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <TextBlock x:Name="ButtonText" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Roboto" FontSize="16"></TextBlock>
+        </Grid>
+    </Grid>
 </UserControl>
