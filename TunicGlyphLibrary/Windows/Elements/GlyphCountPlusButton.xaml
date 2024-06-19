@@ -7,7 +7,10 @@
              mc:Ignorable="d"
              Background="Transparent"
              Height="150" Width="50">
-            <Button Name="GlyphCountBtn" BorderBrush="Transparent" Width="50" Height="150" Click="GlyphCountBtn_OnClick">
+            <Grid Background="Transparent" MouseEnter="MainBody_OnMouseEnter" MouseLeave="MainBody_OnMouseLeave">
+                <Button Name="GlyphCountBtn" BorderBrush="Transparent" Width="50" Height="150" 
+                        Click="GlyphCountBtn_OnClick" PreviewMouseLeftButtonDown="GlyphCountBtn_OnPreviewMouseLeftButtonDown"
+                        PreviewMouseLeftButtonUp="GlyphCountBtn_OnPreviewMouseLeftButtonUp">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Background">
@@ -35,7 +38,7 @@
                             <Trigger Property="IsPressed" Value="True">
                                 <Setter Property="Background">
                                     <Setter.Value>
-                                        <ImageBrush ImageSource="../../Resources/PlusButtonClick.png"></ImageBrush>
+                                        <ImageBrush ImageSource="../../Resources/PlusButtonHover.png"></ImageBrush>
                                     </Setter.Value>
                                 </Setter>
                             </Trigger>
@@ -43,4 +46,5 @@
                     </Style>
                 </Button.Style>
             </Button>
+            </Grid>
 </UserControl>

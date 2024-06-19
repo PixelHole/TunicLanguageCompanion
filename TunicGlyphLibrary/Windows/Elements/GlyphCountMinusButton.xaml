@@ -7,40 +7,43 @@
              mc:Ignorable="d"
              Background="Transparent"
              Height="150" Width="50">
-    <Button Name="GlyphCountBtn" BorderBrush="Transparent" Width="50" Height="150" Click="GlyphCountBtn_OnClick">
-                <Button.Style>
-                    <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background">
-                            <Setter.Value>
-                                <ImageBrush ImageSource="../../Resources/MinusButton.png"></ImageBrush>
-                            </Setter.Value>
-                        </Setter>
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="{x:Type Button}">
-                                    <Border Background="{TemplateBinding Background}">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                    </Border>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                        <Style.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background">
-                                    <Setter.Value>
-                                        <ImageBrush ImageSource="../../Resources/MinusButtonHover.png"></ImageBrush>
-                                    </Setter.Value>
-                                </Setter>
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter Property="Background">
-                                    <Setter.Value>
-                                        <ImageBrush ImageSource="../../Resources/MinusButtonClick.png"></ImageBrush>
-                                    </Setter.Value>
-                                </Setter>
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </Button.Style>
-            </Button>
+    <Grid Name="MainBody" Background="Transparent" MouseEnter="MainBody_OnMouseEnter" MouseLeave="MainBody_OnMouseLeave">
+        <Button Name="GlyphCountBtn" BorderBrush="Transparent" Width="50" Height="150" Click="GlyphCountBtn_OnClick" 
+                PreviewMouseLeftButtonUp="GlyphCountBtn_OnPreviewMouseLeftButtonUp" PreviewMouseLeftButtonDown="GlyphCountBtn_OnPreviewMouseLeftButtonDown">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="../../Resources/MinusButton.png"></ImageBrush>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush ImageSource="../../Resources/MinusButtonHover.png"></ImageBrush>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush ImageSource="../../Resources/MinusButtonHover.png"></ImageBrush>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>            
+        </Button>
+    </Grid>
 </UserControl>

@@ -138,7 +138,9 @@ namespace TunicGlyphLibrary.Windows.Elements
         {
             if (!(sender is Shape part) || !EditingEnabled) return;
             UpdateGlyphLine(part);
-            Panel.SetZIndex(part, 10);
+
+            int z = Glyph.GetValue(TagToIndex(part.Tag)) ? 15 : 11;
+            Panel.SetZIndex(part, z);
         }
         private void GlyphPartMouseEnter(object sender, MouseEventArgs e)
         {

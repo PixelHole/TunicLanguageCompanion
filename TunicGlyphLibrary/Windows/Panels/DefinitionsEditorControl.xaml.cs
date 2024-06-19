@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Media;
 using TunicGlyphLibrary.Library;
 
 namespace TunicGlyphLibrary.Windows.Elements
@@ -49,7 +50,7 @@ namespace TunicGlyphLibrary.Windows.Elements
         }
         
         // UI Event Handlers
-        private void AddDefinitionBtn_OnClick(object sender, RoutedEventArgs e)
+        private void AddDefinitionBtn_OnClick()
         {
             if (DefinitionTextBox.Text != string.Empty)
             {
@@ -93,7 +94,10 @@ namespace TunicGlyphLibrary.Windows.Elements
         }
         private void CreateDefinitionPanel(string definition)
         {
-            DefinitionPanel defPanel = new DefinitionPanel(definition);
+            DefinitionPanel defPanel = new DefinitionPanel(definition)
+            {
+                Margin = new Thickness(0, 0, 5, 5)
+            };
             defPanel.OnDeleteRequest += DefinitionPanelDeleteHandler;
             DefinitionsStack.Children.Add(defPanel);
         }

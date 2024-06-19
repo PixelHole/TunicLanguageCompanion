@@ -9,24 +9,38 @@
              d:DesignHeight="400" d:DesignWidth="500">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
-            <RowDefinition/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Grid Background="Transparent" Grid.Row="0" MouseEnter="WordEditorPanel_OnMouseEnter" MouseLeave="WordEditorPanel_OnMouseLeave">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition Width="8*"/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <elements:LanguageWordControl x:Name="WordDisplay" Grid.Column="1" Panel.ZIndex="1"></elements:LanguageWordControl>
+        
+        <Grid MouseEnter="WordEditorPanel_OnMouseEnter" MouseLeave="WordEditorPanel_OnMouseLeave">
+            <Grid Background="Transparent" Margin="0,0 ,0 ,10" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <elements:LanguageWordControl x:Name="WordDisplay" Grid.Column="1" ></elements:LanguageWordControl>
                 
-            <elements:GlyphCountMinusButton x:Name="RemoveGlyphBtn" Grid.Column="0" Click="RemoveGlyphBtn_OnClick"></elements:GlyphCountMinusButton>
-            <elements:GlyphCountPlusButton x:Name="AddGlyphBtn" Grid.Column="2" Click="AddGlyphBtn_OnClick"></elements:GlyphCountPlusButton>
-            <Button Name="GlyphSearchBtn" Visibility="Hidden" Grid.Column="2" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10">S</Button>
+                <elements:GlyphCountMinusButton x:Name="RemoveGlyphBtn" Grid.Column="0" Click="RemoveGlyphBtn_OnClick"></elements:GlyphCountMinusButton>
+                <elements:GlyphCountPlusButton x:Name="AddGlyphBtn" Grid.Column="2" Click="AddGlyphBtn_OnClick"></elements:GlyphCountPlusButton>
+            </Grid>
+            <StackPanel Name="WordDisplayUtility" Visibility="Hidden" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <elements:StyledMiniButton x:Name="GlyphClearBtn" IconUri="../../Resources/Cross.png" Margin="5" Click="GlyphClearBtn_OnClick"/>
+                <elements:StyledMiniButton x:Name="GlyphSearchBtn" IconUri="../../Resources/SearchIcon.png" Margin="5" Click="GlyphSearchBtn_OnClick"/>
+            </StackPanel>
         </Grid>
         <Grid Margin="0, 6, 0, 0" Grid.Row="1" Background="Transparent" MouseEnter="DefinitionEditorGrid_OnMouseEnter" MouseLeave="DefinitionEditorGrid_OnMouseLeave">
-            <Button Panel.ZIndex="20" Name="DefinitionSearchBtn" Visibility="Hidden" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10">S</Button>
             <elements:DefinitionsEditorControl x:Name="DefinitionsEditor"></elements:DefinitionsEditorControl>
+            <StackPanel Name="DefPanelUtility" Visibility="Hidden" Panel.ZIndex="20" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <elements:StyledMiniButton x:Name="DefinitionClearBtn" IconUri="../../Resources/Cross.png" Margin="5" Click="DefinitionClearBtn_OnClick"/>
+                <elements:StyledMiniButton x:Name="DefinitionSearchBtn" IconUri="../../Resources/SearchIcon.png"  Margin="5" Click="DefinitionSearchBtn_OnClick"/>
+            </StackPanel>
         </Grid>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <elements:StyledButton x:Name="DoneBtn" Margin="5" Width="160" Text="Done" Click="SaveToLibraryBtn_OnClick"></elements:StyledButton>
+            <elements:StyledButton x:Name="CancelBtn" Margin="5" Width="160" Text="Cancel" Visibility="Collapsed" Click="CancelBtn_OnClick"></elements:StyledButton>
+        </StackPanel>
     </Grid>
 </UserControl>

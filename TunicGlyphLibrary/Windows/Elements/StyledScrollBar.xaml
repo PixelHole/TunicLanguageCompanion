@@ -5,8 +5,14 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:TunicGlyphLibrary.Windows.Elements"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        
+             Background="Transparent"
+             d:DesignHeight="600" d:DesignWidth="60">
+    <Grid Background="Transparent">
+        <Image Source="../../Resources/SliderLine.png" Stretch="Uniform" HorizontalAlignment="Center"/>
+        <Canvas Margin="0">
+            <Image Name="SliderKnob" Width="30" Source="../../Resources/SliderKnob.png"
+                   MouseEnter="SliderKnob_OnMouseEnter" MouseLeave="SliderKnob_OnMouseLeave"
+                   MouseDown="SliderKnob_OnMouseDown" MouseUp="SliderKnob_OnMouseUp"/>
+        </Canvas>
     </Grid>
 </UserControl>

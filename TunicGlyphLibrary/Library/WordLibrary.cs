@@ -7,7 +7,7 @@ namespace TunicGlyphLibrary.Library
     public static class WordLibrary
     {
         public delegate void WordAdded(Word addedWord);
-        public delegate void WordRemoved(int index);
+        public delegate void WordRemoved(int index, Word word);
         public delegate void WordEdited(int index);
         public delegate void RequestWordEdit(Word word);
         public static event WordAdded OnWordAdded;
@@ -29,7 +29,7 @@ namespace TunicGlyphLibrary.Library
             if (!Words.Contains(word)) return;
             int index = Words.IndexOf(word);
             Words.Remove(word);   
-            OnWordRemoved?.Invoke(index);
+            OnWordRemoved?.Invoke(index, word);
         }
         public static void EditWord(Word word, Word newWord)
         {

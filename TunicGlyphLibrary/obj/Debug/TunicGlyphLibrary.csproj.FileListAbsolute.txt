@@ -42,3 +42,9 @@ M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Debug\Windows\Panels\Lang
 M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Debug\Windows\Panels\WordLibraryDisplay.baml
 M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Debug\Windows\Elements\StyledButton.g.cs
 M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Debug\Windows\Elements\StyledButton.baml
+M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Debug\Windows\Elements\DefinitionPanelCloseButton.g.cs
+M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Debug\Windows\Elements\DefinitionPanelCloseButton.baml
+M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Debug\Windows\Elements\StyledScrollBar.g.cs
+M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Debug\Windows\Elements\StyledScrollBar.baml
+M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Debug\Windows\Elements\StyledMiniButton.g.cs
+M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Debug\Windows\Elements\StyledMiniButton.baml

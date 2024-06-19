@@ -7,7 +7,11 @@
         xmlns:editors="clr-namespace:TunicGlyphLibrary.Windows.Editors"
         mc:Ignorable="d"
         Background="Transparent"
-        Title="MainWindow" Height="700" Width="950">
+        Title="MainWindow" Height="700" Width="950"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        Loaded="MainWindow_OnLoaded">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="pack://application:,,,/Resources/background.png" Stretch="Fill"/>
@@ -18,19 +22,16 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         
-        <Image Grid.Column="1" Margin="0, 40, 0, 40" HorizontalAlignment="Right" Stretch="Uniform" Source="../../Resources/SideDecoration.png"></Image>
+        <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right">
+            <elements:StyledMiniButton x:Name="MinimizeBtn" Margin="5" IconUri="../../Resources/LineIcon.png" Click="MinimizeBtn_OnClick"/>
+            <elements:StyledMiniButton x:Name="CloseBtn" Margin="5" IconUri="../../Resources/Cross.png" Click="CloseBtn_OnClick"/>
+        </StackPanel>
+        
+        <Image Grid.Column="1" Margin="0, 37.5, 0, 37" HorizontalAlignment="Right" VerticalAlignment="Center" Source="../../Resources/SideDecoration.png"></Image>
         
         <Grid Column="0" Margin="28, 31, 10, 35">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="10*"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
             <editors:WordEditorControl x:Name="WordEditor" Grid.Column="0"></editors:WordEditorControl>
-            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Click="SaveToLibraryBtn_OnClick">Done</Button>
-                <Button>Cancel</Button>
-            </StackPanel>
         </Grid>
-        <elements:WordLibraryDisplay Margin="5, 31, 85, 35" x:Name="WordLibraryList" Grid.Column="1"></elements:WordLibraryDisplay>
+        <elements:WordLibraryDisplay Margin="5, 35, 85, 40" x:Name="WordLibraryList" Grid.Column="1"></elements:WordLibraryDisplay>
     </Grid>
 </Window>

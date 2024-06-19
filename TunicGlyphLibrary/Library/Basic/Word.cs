@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace TunicGlyphLibrary.Library
 {
@@ -32,16 +33,17 @@ namespace TunicGlyphLibrary.Library
 
         public static bool operator ==(Word a, Word b)
         {
-            if (a.Definitions.Count != b.Definitions.Count) return false;
-            
-            foreach (var definition in a.Definitions)
-            {
-                if (!b.Definitions.Contains(definition)) return false;
-            }
+            if (a?.Definitions.Count != b?.Definitions.Count) return false;
 
-            if (a.Glyphs.Count != b.Glyphs.Count) return false;
+            if (a?.Definitions != null)
+                if ((a?.Definitions).Any(definition => !b.Definitions.Contains(definition)))
+                {
+                    return false;
+                }
 
-            for (int i = 0; i < a.Glyphs.Count; i++)
+            if (a?.Glyphs.Count != b?.Glyphs.Count) return false;
+
+            for (int i = 0; i < a?.Glyphs.Count; i++)
             {
                 if (a.Glyphs[i] != b.Glyphs[i]) return false;
             }

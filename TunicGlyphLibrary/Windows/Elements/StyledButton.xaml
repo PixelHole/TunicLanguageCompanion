@@ -5,16 +5,24 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              mc:Ignorable="d"
              Background="Transparent"
-             d:DesignHeight="45" d:DesignWidth="115">
+             Height="45" Width="155">
+    
     <Grid Background="Transparent" MouseEnter="BackGround_OnMouseEnter" MouseLeave="BackGround_OnMouseLeave" MouseDown="BackGround_OnMouseDown" MouseUp="BackGround_OnMouseUp">
         <Grid Name="MainBody">
-            <Rectangle x:Name="BackGround" Margin="5" Fill="White"/>
+            <Rectangle x:Name="ButtonBackground" Margin="3" Fill="White"/>
             <Rectangle>
                 <Rectangle.Fill>
-                    <ImageBrush ImageSource="../../Resources/ButtonFramw.png"/>
+                    <ImageBrush ImageSource="../../Resources/ButtonFramw.png" Stretch="UniformToFill"/>
                 </Rectangle.Fill>
             </Rectangle>
-            <TextBlock x:Name="ButtonText" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Roboto" FontSize="16"></TextBlock>
+            <TextBlock x:Name="ButtonText" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16">
+                <TextBlock.FontFamily>
+                    <FontFamily>
+                        pack://application:,,,/Fonts/#Espressonal
+                    </FontFamily>
+                </TextBlock.FontFamily>
+                ass
+            </TextBlock>
         </Grid>
     </Grid>
 </UserControl>

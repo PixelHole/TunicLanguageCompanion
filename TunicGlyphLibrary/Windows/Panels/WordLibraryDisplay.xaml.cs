@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using TunicGlyphLibrary.Library;
 
 namespace TunicGlyphLibrary.Windows.Elements
@@ -10,10 +11,15 @@ namespace TunicGlyphLibrary.Windows.Elements
         {
             InitializeComponent();
             WordLibrary.OnWordAdded += CreateLibraryDisplayItem;
-            WordLibrary.OnWordRemoved += RemoveLibraryDisplayItem;
+            WordLibrary.OnWordRemoved += OnLibraryWordRemoved;
             WordLibrary.OnWordEdited += UpdateLibraryDisplayItem;
         }
 
+        private void OnLibraryWordRemoved(int index, Word word)
+        {
+            RemoveLibraryDisplayItem(index);
+        }
+        
         public void UpdateLibraryDisplay()
         {
             for (int i = 0; i < WordLibrary.Words.Count; i++)
@@ -39,7 +45,7 @@ namespace TunicGlyphLibrary.Windows.Elements
         {
             WordLibraryItem libraryItem = new WordLibraryItem(word)
             {
-                Margin = new Thickness(0, 0, 0, 5),
+                Margin = new Thickness(5, 0, 0, 0),
             };
             libraryItem.OnDeleteRequest += WordLibrary.DeleteWordRequestHandler;
             libraryItem.OnEditRequest += WordLibrary.EditWordRequestHandler;
@@ -53,5 +59,7 @@ namespace TunicGlyphLibrary.Windows.Elements
             item.OnDeleteRequest -= WordLibrary.DeleteWordRequestHandler;
             WordLibraryList.Children.Remove(item);
         }
+        
+        
     }
 }

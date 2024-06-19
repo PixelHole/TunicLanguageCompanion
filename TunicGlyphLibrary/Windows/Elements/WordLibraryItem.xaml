@@ -6,22 +6,38 @@
              xmlns:local="clr-namespace:TunicGlyphLibrary.Windows.Elements"
              mc:Ignorable="d"
              Background="Transparent"
-             d:DesignWidth="250"
-             Height="60"
+             d:DesignWidth="235"
+             Height="65"
              MaxHeight="100">
     <Grid Name="Frame" Background="Transparent" MouseEnter="Frame_OnMouseEnter" MouseLeave="Frame_OnMouseLeave">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle Grid.Column="0" Grid.ColumnSpan="3" Fill="White" Margin="0" RadiusX="10" RadiusY="10"></Rectangle>
-        <Viewbox>
-            <local:LanguageWordControl x:Name="WordDisplay" GlyphActiveBrush="Black" GlyphInactiveBrush="Gainsboro" KeyboardEditingEnabled="False" MouseEditingEnabled="False" Margin="5" Panel.ZIndex="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Rectangle Grid.Column="0" Grid.ColumnSpan="2">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="../../Resources/LibraryItemFrame.png" Stretch="Uniform"></ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        
+        <Viewbox Grid.Column="0" Margin="0, 5, 0, 8">
+            <local:LanguageWordControl x:Name="WordDisplay" Margin="5" KeyboardEditingEnabled="False" MouseEditingEnabled="False" GlyphInactiveBrush="Transparent" Panel.ZIndex="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         </Viewbox>
-        <TextBlock Name="DefinitionTextBlock" Grid.Column="1"  TextAlignment="Left" VerticalAlignment="Center"></TextBlock>
-        <StackPanel Name="ControlPanel" Visibility="Hidden" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" Background="Aquamarine">
-            <Button Name="EditBtn" Margin="5" VerticalAlignment="Center" Click="EditBtn_OnClick">E</Button>
-            <Button Name="DeleteBtn" Margin="5" VerticalAlignment="Center" Click="DeleteBtn_OnClick">X</Button>
-        </StackPanel>
+        
+        <TextBlock Name="DefinitionTextBlock" Grid.Column="1"  TextAlignment="Left" VerticalAlignment="Center">
+            <TextBlock.FontFamily>
+                <FontFamily>
+                    pack://application:,,,/Fonts/#Espressonal
+                </FontFamily>
+            </TextBlock.FontFamily>
+        </TextBlock>
+        
+        <Grid Name="ControlPanel" Grid.Column="1" Visibility="Hidden" HorizontalAlignment="Right">
+            <Image Grid.Column="1" Margin="0, 4, 0, 8" Source="../../Resources/LibraryItemSidePanel.png" Stretch="Uniform" HorizontalAlignment="Right"></Image>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <local:StyledMiniButton x:Name="EditBtn" IconUri="../../Resources/editIcon.png" Margin="5, 0, 0, 0" VerticalAlignment="Center" Click="EditBtn_OnClick"/>
+                <local:StyledMiniButton x:Name="DeleteBtn" IconUri="../../Resources/Cross.png" Margin="5, 0, 5, 0" VerticalAlignment="Center" Click="DeleteBtn_OnClick" />
+            </StackPanel>
+        </Grid>
     </Grid>
 </UserControl>

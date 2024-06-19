@@ -6,25 +6,39 @@
              xmlns:local="clr-namespace:TunicGlyphLibrary.Windows.Elements"
              mc:Ignorable="d"
              Background="Transparent"
-             Height="45" d:DesignWidth="300">
-    <TextBox Name="TextBox" BorderThickness="0" FontSize="29" FontFamily="Times New Roman" VerticalContentAlignment="Center" Grid.Column="0" BorderBrush="Transparent" TextChanged="TextBox_OnTextChanged">
-        <TextBox.Style>
-            <Style TargetType="{x:Type TextBox}">
-                <Setter Property="Background">
-                    <Setter.Value>
-                        <ImageBrush ImageSource="../../Resources/TextBox.png"/>
-                    </Setter.Value>
-                </Setter>
-                <Style.Triggers>
-                    <Trigger Property="IsKeyboardFocused" Value="True">
-                        <Setter Property="Background">
+             d:DesignHeight="45" d:DesignWidth="450">
+    <Grid>
+        <Grid>
+            <Rectangle Name="TextBoxBackground" Fill="Azure" Margin="5"></Rectangle>
+            <TextBox Name="TextBox" BorderThickness="0" FontSize="29"
+                     VerticalContentAlignment="Center" Grid.Column="0" BorderBrush="Transparent" TextChanged="TextBox_OnTextChanged"
+                     GotKeyboardFocus="TextBox_OnGotKeyboardFocus" LostKeyboardFocus="TextBox_OnLostKeyboardFocus">
+                <TextBox.Style>
+                    <Style TargetType="{x:Type TextBox}">
+                        <Setter Property="FontFamily">
                             <Setter.Value>
-                                <ImageBrush ImageSource="../../Resources/TextBoxHover.png"/>
+                                <FontFamily>
+                                    pack://application:,,,/Fonts/#Espressonal
+                                </FontFamily>
                             </Setter.Value>
                         </Setter>
-                    </Trigger>
-                </Style.Triggers>
-            </Style>
-        </TextBox.Style>
-    </TextBox>
+                        <Setter Property="Background">
+                            <Setter.Value>
+                                <ImageBrush ImageSource="../../Resources/textboxFrame.png" Stretch="Fill"/>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="Background">
+                                    <Setter.Value>
+                                        <ImageBrush ImageSource="../../Resources/textboxFrame.png" Stretch="Fill"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+        </Grid>
+    </Grid>
 </UserControl>

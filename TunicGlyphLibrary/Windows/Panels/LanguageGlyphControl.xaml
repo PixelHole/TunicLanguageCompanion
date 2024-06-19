@@ -9,7 +9,7 @@
     <Grid>
         <Canvas Name="canvas" Width="200" Height="307">
             <Rectangle Name="GlyphHighLight" Canvas.Left="0" Canvas.Top="0" Fill="RosyBrown" Width="200" Height="307" Visibility="Hidden"></Rectangle>
-            <Rectangle Name= "base" Tag="-1" Panel.ZIndex="18" Width="200" Height="10" Fill="LightGray" Canvas.Top="115" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Rectangle Name= "base" Tag="-1" Panel.ZIndex="18" Width="210" Height="10" Fill="LightGray" Canvas.Top="115" Canvas.Left="-5" HorizontalAlignment="Center" VerticalAlignment="Top" RadiusX="5" RadiusY="5"/>
             <Rectangle Name="BottomMiddle" Tag="10" Width="10" Height="121" Fill="Gray" Canvas.Top="145" RadiusX="5" RadiusY="5" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="95" MouseLeftButtonDown="GlyphPartClick" MouseEnter="GlyphPartMouseEnter" MouseLeave="GlyphPartMouseLeave"/>
             <Rectangle Name="TopMiddle" Tag="1" Width="10" Height="125" Fill="Gray" RadiusX="5" RadiusY="5" Canvas.Left="95" HorizontalAlignment="Center" VerticalAlignment="Top" MouseLeftButtonDown="GlyphPartClick" MouseEnter="GlyphPartMouseEnter" MouseLeave="GlyphPartMouseLeave"/>
             <Rectangle Name="BottomLeft" Tag="6" Width="10" Height="66" Fill="Gray" Canvas.Top="145" RadiusX="5" RadiusY="5" HorizontalAlignment="Center" VerticalAlignment="Top" MouseLeftButtonDown="GlyphPartClick" MouseEnter="GlyphPartMouseEnter" MouseLeave="GlyphPartMouseLeave"/>

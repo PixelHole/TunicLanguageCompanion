@@ -5,8 +5,24 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:TunicGlyphLibrary.Windows.Elements"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        
+             Background="Transparent"
+             Height="30" Width="30">
+    <Grid Name="BodyBase" Background="Transparent" 
+          MouseEnter="BodyBase_OnMouseEnter" MouseLeave="BodyBase_OnMouseLeave"
+          MouseDown="BodyBase_OnMouseDown" MouseUp="BodyBase_OnMouseUp">
+        <Grid Name="Body">
+            <Rectangle Name="ButtonBackground" Fill="White" Width="20" Height="20" Margin="6,6,6,6" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Image Source="../../Resources/MiniButtonFrame.png" Stretch="Uniform"></Image>
+            <Image Name="Icon" Margin="8"></Image>
+        </Grid>
     </Grid>
 </UserControl>

@@ -1,6 +1,8 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
 using TunicGlyphLibrary.Library;
 
 namespace TunicGlyphLibrary.Windows.Elements
@@ -25,19 +27,22 @@ namespace TunicGlyphLibrary.Windows.Elements
         }
         
         
-        public WordLibraryItem()
-        {
-            InitializeComponent();
-            UpdateDisplay();
-        }
         public WordLibraryItem(Word word)
         {
             InitializeComponent();
             Word = word;
+            DefinitionTextBlock.Foreground = new SolidColorBrush(Color.FromRgb(75, 61, 68));
         }
-
+        public WordLibraryItem() : this(new Word())
+        {
+            
+        }
+        
+        
         private void UpdateDisplay()
         {
+            WordDisplay.GlyphActiveBrush = new SolidColorBrush(Color.FromRgb(75, 61, 68));
+            
             WordDisplay.Glyphs = Word.Glyphs;
             if (Word.Definitions.Count == 0)
             {
@@ -74,11 +79,11 @@ namespace TunicGlyphLibrary.Windows.Elements
         {
             HideControlButtons();
         }
-        private void EditBtn_OnClick(object sender, RoutedEventArgs e)
+        private void EditBtn_OnClick()
         {
             RequestEditWord();
         }
-        private void DeleteBtn_OnClick(object sender, RoutedEventArgs e)
+        private void DeleteBtn_OnClick()
         {
             RequestDeleteWord();
         }
