@@ -25,6 +25,7 @@ namespace TunicGlyphLibrary.Windows.Elements
                 UpdateDisplay();
             }
         }
+        public int LibraryIndex { get; private set; }
         
         
         public WordLibraryItem(Word word)
@@ -33,12 +34,8 @@ namespace TunicGlyphLibrary.Windows.Elements
             Word = word;
             DefinitionTextBlock.Foreground = new SolidColorBrush(Color.FromRgb(75, 61, 68));
         }
-        public WordLibraryItem() : this(new Word())
-        {
-            
-        }
-        
-        
+
+
         private void UpdateDisplay()
         {
             WordDisplay.GlyphActiveBrush = new SolidColorBrush(Color.FromRgb(75, 61, 68));

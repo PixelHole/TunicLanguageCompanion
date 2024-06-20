@@ -15,7 +15,8 @@
                     <ImageBrush ImageSource="../../Resources/ButtonFramw.png" Stretch="UniformToFill"/>
                 </Rectangle.Fill>
             </Rectangle>
-            <TextBlock x:Name="ButtonText" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16">
+            <TextBlock x:Name="ButtonText" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"
+                       Foreground="#4b3d44">
                 <TextBlock.FontFamily>
                     <FontFamily>
                         pack://application:,,,/Fonts/#Espressonal

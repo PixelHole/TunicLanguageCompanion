@@ -1,11 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
 
 namespace TunicGlyphLibrary.Library
 {
     public class Word
     {
+        [JsonProperty]
         public List<string> Definitions { get; } = new List<string>();
+        [JsonProperty]
         public List<Glyph> Glyphs { get; } = new List<Glyph>();
 
 
@@ -13,6 +16,7 @@ namespace TunicGlyphLibrary.Library
         {
             
         }
+        [JsonConstructor]
         public Word(List<Glyph> glyphs, List<string> definitions) : this()
         {
             SetDefinitions(definitions);

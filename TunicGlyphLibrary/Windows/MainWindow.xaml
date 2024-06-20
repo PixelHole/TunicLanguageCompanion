@@ -6,13 +6,16 @@
         xmlns:elements="clr-namespace:TunicGlyphLibrary.Windows.Elements"
         xmlns:editors="clr-namespace:TunicGlyphLibrary.Windows.Editors"
         mc:Ignorable="d"
+        AllowsTransparency="True"
         Background="Transparent"
         Title="MainWindow" Height="700" Width="950"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
         ResizeMode="CanMinimize"
         Loaded="MainWindow_OnLoaded">
-    <Grid>
+    
+    <Border CornerRadius="8" BorderBrush="Transparent" BorderThickness="1">
+        <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="pack://application:,,,/Resources/background.png" Stretch="Fill"/>
         </Grid.Background>
@@ -22,7 +25,12 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         
-        <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right">
+        <Rectangle Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Top" Height="15" Fill="Transparent" MouseDown="DragAreaMouseDown"/>
+        <Rectangle Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Height="15" Fill="Transparent" MouseDown="DragAreaMouseDown"/>
+        <Rectangle Grid.Column="0" HorizontalAlignment="Left" Width="12" Fill="Transparent" MouseDown="DragAreaMouseDown"/>
+        <Rectangle Grid.Column="1" Panel.ZIndex="100" HorizontalAlignment="Right" Width="25" Fill="Transparent" MouseDown="DragAreaMouseDown"/>
+            
+        <StackPanel Panel.ZIndex="100" Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right">
             <elements:StyledMiniButton x:Name="MinimizeBtn" Margin="5" IconUri="../../Resources/LineIcon.png" Click="MinimizeBtn_OnClick"/>
             <elements:StyledMiniButton x:Name="CloseBtn" Margin="5" IconUri="../../Resources/Cross.png" Click="CloseBtn_OnClick"/>
         </StackPanel>
@@ -33,5 +41,20 @@
             <editors:WordEditorControl x:Name="WordEditor" Grid.Column="0"></editors:WordEditorControl>
         </Grid>
         <elements:WordLibraryDisplay Margin="5, 35, 85, 40" x:Name="WordLibraryList" Grid.Column="1"></elements:WordLibraryDisplay>
+        
+        <Grid Name="LoadingLayer" Grid.ColumnSpan="2" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Rectangle Fill="Black" Opacity="0.95"/>
+            <Image Source="../../Resources/Panel.png" Width="300" Height="150"/>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Loading Data from Disk..."
+                       Foreground="#4b3d44" FontSize="20">
+                <TextBlock.FontFamily>
+                    <FontFamily>
+                        pack://application:,,,/Fonts/#Espressonal
+                    </FontFamily>
+                </TextBlock.FontFamily>
+            </TextBlock>
+        </Grid>
+        
     </Grid>
+    </Border>
 </Window>

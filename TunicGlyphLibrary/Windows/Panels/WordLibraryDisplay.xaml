@@ -330,8 +330,16 @@
     </UserControl.Resources>
     
     <Grid>
-        <ScrollViewer Name="WordLibraryScrollViewer" VerticalScrollBarVisibility="Visible">
-            <StackPanel Name="WordLibraryList" Orientation="Vertical"></StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        
+        <ScrollViewer Name="WordLibraryScrollViewer" VerticalScrollBarVisibility="Visible" Grid.RowSpan="2">
+            <StackPanel Name="WordLibraryList" Orientation="Vertical">
+            </StackPanel>
         </ScrollViewer>
+        <elements:StyledMiniButton Grid.Row="1" x:Name="ClearFilterByn" IconUri="../../Resources/Cross.png" Visibility="Hidden"
+                                   Click="ClearFilterByn_OnClick"/>
     </Grid>
 </UserControl>

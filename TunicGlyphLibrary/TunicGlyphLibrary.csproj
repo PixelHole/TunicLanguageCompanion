@@ -44,9 +44,6 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
-    <Reference Include="Unglide, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EdCanHack.Unglide.2.0.0.0\lib\portable-net45+win+wpa81+wp80\Unglide.dll</HintPath>
-    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -59,6 +56,7 @@
     <Compile Include="Library\Basic\Glyph.cs" />
     <Compile Include="Library\Basic\Word.cs" />
     <Compile Include="Library\SaveFileManager.cs" />
+    <Compile Include="Library\ScoredWord.cs" />
     <Compile Include="Library\WordLibrary.cs" />
     <Compile Include="MouseCapture.cs" />
     <Compile Include="Windows\Editors\WordEditorControl.xaml.cs">
@@ -150,10 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.xaml" />
-    <Content Include="Fonts\Chalkboard.ttf" />
-    <Content Include="Fonts\DazHandwriting.otf" />
     <Content Include="Fonts\Espressonal.otf" />
-    <Content Include="Fonts\Papernotes.ttf" />
     <Content Include="Resources\background.png" />
     <Content Include="Resources\ButtonFramw.png" />
     <Content Include="Resources\Cross.png" />
@@ -170,6 +165,7 @@
     <Content Include="Resources\MinusButton.png" />
     <Content Include="Resources\MinusButtonClick.png" />
     <Content Include="Resources\MinusButtonHover.png" />
+    <Content Include="Resources\Panel.png" />
     <Content Include="Resources\PlusButton.png" />
     <Content Include="Resources\PlusButtonClick.png" />
     <Content Include="Resources\PlusButtonHover.png" />

@@ -9,10 +9,7 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("app.xaml")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/chalkboard.ttf")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/dazhandwriting.otf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/espressonal.otf")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/papernotes.ttf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/background.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/buttonframw.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/cross.png")]
@@ -29,6 +26,7 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/minusbutton.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/minusbuttonclick.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/minusbuttonhover.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/panel.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/plusbutton.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/plusbuttonclick.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/plusbuttonhover.png")]

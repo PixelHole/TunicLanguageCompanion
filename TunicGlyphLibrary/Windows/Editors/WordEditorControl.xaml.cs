@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -8,13 +9,18 @@ namespace TunicGlyphLibrary.Windows.Editors
 {
     public partial class WordEditorControl : UserControl
     {
+        public delegate void GlyphSearchRequest(List<Glyph> glyphs);
+        public delegate void DefinitionSearchRequest(List<string> definitions);
+
+        public event GlyphSearchRequest OnGlyphSearchRequest;
+        public event DefinitionSearchRequest OnDefinitionSearchRequest;
+        
         public Word EditingWord { get; private set; }
         public bool EditingMode { get; private set; } = false;
         
         public WordEditorControl()
         {
             InitializeComponent();
-            SetupWordDisplay();
             InitialSetup();
         }
         
@@ -25,6 +31,8 @@ namespace TunicGlyphLibrary.Windows.Editors
             
             DoneBtn.SetColors(Color.FromRgb(179, 165, 85), Color.FromRgb(233, 216, 118));
             CancelBtn.SetColors(Color.FromRgb(199, 123, 88), Color.FromRgb(252, 158, 115));
+            
+            SetupWordDisplay();
         }
         
         
@@ -47,7 +55,7 @@ namespace TunicGlyphLibrary.Windows.Editors
         }
         
         // Word Editor Functions
-        public void ResetEditor()
+        private void ResetEditor()
         {
             WordDisplay.Clear();
             DefinitionsEditor.Clear();
@@ -55,7 +63,7 @@ namespace TunicGlyphLibrary.Windows.Editors
             EditingWord = null;
             HideCancelButton();
         }
-        public Word GetWord()
+        private Word GetWord()
         {
             return new Word(WordDisplay.Glyphs, DefinitionsEditor.Definitions);
         }
@@ -80,23 +88,6 @@ namespace TunicGlyphLibrary.Windows.Editors
             ResetEditor();
         }
         
-        // UI Mouse Handler
-        private void WordEditorPanel_OnMouseEnter(object sender, MouseEventArgs e)
-        {
-            ShowGlyphControlPanel();
-        }
-        private void WordEditorPanel_OnMouseLeave(object sender, MouseEventArgs e)
-        {
-            HideGlyphControlPanel();
-        }
-        private void DefinitionEditorGrid_OnMouseEnter(object sender, MouseEventArgs e)
-        {
-            ShowDefinitionControlPanel();
-        }
-        private void DefinitionEditorGrid_OnMouseLeave(object sender, MouseEventArgs e)
-        {
-            HideDefinitionControlPanel();
-        }
         
         // word Display
         private void SetupWordDisplay()
@@ -115,6 +106,16 @@ namespace TunicGlyphLibrary.Windows.Editors
         private void RemoveGlyphBtn_OnClick()
         {
             WordDisplay.RemoveLastGlyph();
+        }
+        
+        // Word Search
+        private void RequestSearchByGlyph()
+        {
+            OnGlyphSearchRequest?.Invoke(WordDisplay.Glyphs);
+        }
+        private void RequestSearchByDefinition()
+        {
+            OnDefinitionSearchRequest?.Invoke(DefinitionsEditor.Definitions);
         }
 
         // word search buttons
@@ -146,11 +147,11 @@ namespace TunicGlyphLibrary.Windows.Editors
         }
         private void DefinitionSearchBtn_OnClick()
         {
-            
+            RequestSearchByDefinition();
         }
         private void GlyphSearchBtn_OnClick()
         {
-            
+            RequestSearchByGlyph();
         }
         private void SaveToLibraryBtn_OnClick()
         {
@@ -159,6 +160,24 @@ namespace TunicGlyphLibrary.Windows.Editors
         private void CancelBtn_OnClick()
         {
             ResetEditor();
+        }
+        
+        // UI Mouse Handler
+        private void WordEditorPanel_OnMouseEnter(object sender, MouseEventArgs e)
+        {
+            ShowGlyphControlPanel();
+        }
+        private void WordEditorPanel_OnMouseLeave(object sender, MouseEventArgs e)
+        {
+            HideGlyphControlPanel();
+        }
+        private void DefinitionEditorGrid_OnMouseEnter(object sender, MouseEventArgs e)
+        {
+            ShowDefinitionControlPanel();
+        }
+        private void DefinitionEditorGrid_OnMouseLeave(object sender, MouseEventArgs e)
+        {
+            HideDefinitionControlPanel();
         }
     }
 }

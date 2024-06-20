@@ -14,12 +14,17 @@ namespace TunicGlyphLibrary.Windows
         {
             DataContext = this;
             InitializeComponent();
+            // this bit should be changed later
+            WordEditor.OnGlyphSearchRequest += glyphs => WordLibraryList.FilterWordsByGlyphs(glyphs);
+            WordEditor.OnDefinitionSearchRequest += words => WordLibraryList.FilterWordsByDefinitions(words);
         }
 
         // Main Window Event Handlers
         private void MainWindow_OnLoaded(object sender, RoutedEventArgs e)
         {
+            LoadingLayer.Visibility = Visibility.Visible;
             SaveFileManager.LoadAllWords();
+            LoadingLayer.Visibility = Visibility.Hidden;
         }
 
         
@@ -32,6 +37,11 @@ namespace TunicGlyphLibrary.Windows
         {
             SaveFileManager.SaveAllWords();
             Application.Current.Shutdown();
+        }
+        private void DragAreaMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+                DragMove();
         }
     }
 }

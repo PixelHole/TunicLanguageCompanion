@@ -8,11 +8,11 @@ namespace TunicGlyphLibrary.Library
 {
     public static class SaveFileManager
     {
-        public static string SaveFileName { get; } = "data.json"; 
+        public static string SaveFileName { get; } = "SavedWords/words.json"; 
         
         public static void SaveAllWords()
         {
-            string parsed = JsonConvert.SerializeObject(WordLibrary.Words);
+            string parsed = JsonConvert.SerializeObject(WordLibrary.Words, Formatting.Indented);
 
             StreamWriter writer;
 

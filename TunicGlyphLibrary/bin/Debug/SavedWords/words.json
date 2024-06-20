@@ -1,1 +1,170 @@
-[{"Definitions":[],"Glyphs":[{}]}]
+[
+  {
+    "Definitions": [
+      "the"
+    ],
+    "Glyphs": [
+      {
+        "Values": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          false,
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "Definitions": [
+      "deez"
+    ],
+    "Glyphs": [
+      {
+        "Values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "Definitions": [
+      "nut"
+    ],
+    "Glyphs": [
+      {
+        "Values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "Definitions": [
+      "goat"
+    ],
+    "Glyphs": [
+      {
+        "Values": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "Definitions": [
+      "ship"
+    ],
+    "Glyphs": [
+      {
+        "Values": [
+          true,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "Definitions": [
+      "eye"
+    ],
+    "Glyphs": [
+      {
+        "Values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "Definitions": [
+      "angry"
+    ],
+    "Glyphs": [
+      {
+        "Values": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false
+        ]
+      }
+    ]
+  }
+]

@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using TunicGlyphLibrary.Library;
@@ -7,6 +8,10 @@ namespace TunicGlyphLibrary.Windows.Elements
 {
     public partial class WordLibraryDisplay : UserControl
     {
+        private bool isFiltered { get; set; } = false;
+        private List<Word> FilteredWordList { get; set; } = new List<Word>();
+        
+        
         public WordLibraryDisplay()
         {
             InitializeComponent();
@@ -14,22 +19,62 @@ namespace TunicGlyphLibrary.Windows.Elements
             WordLibrary.OnWordRemoved += OnLibraryWordRemoved;
             WordLibrary.OnWordEdited += UpdateLibraryDisplayItem;
         }
+        
+        
+        // Word Filtering
+        private void ClearFilter()
+        {
+            isFiltered = false;
+            FilteredWordList.Clear();
+            SetDisplayToRegularMode();
+            UpdateLibraryDisplay();
+        }
+        public void FilterWordsByGlyphs(List<Glyph> glyphs)
+        {
+            isFiltered = true;
+            FilteredWordList = WordLibrary.FilterWordsByGlyphs(glyphs);
+            
+            SetDisplayToFilterMode();
+            UpdateLibraryDisplay();
+        }
+        public void FilterWordsByDefinitions(List<string> definitions)
+        {
+            isFiltered = true;
+            FilteredWordList = WordLibrary.FilterWordsByDefinitions(definitions);
+            
+            SetDisplayToFilterMode();
+            UpdateLibraryDisplay();
+        }
+        
+        // Display Updating
+        private void SetDisplayToFilterMode()
+        {
+            Grid.SetColumnSpan(WordLibraryList, 1);
+            ClearFilterByn.Visibility = Visibility.Visible;
+        }
+        private void SetDisplayToRegularMode()
+        {
+            Grid.SetColumnSpan(WordLibraryList, 2);
+            ClearFilterByn.Visibility = Visibility.Hidden;
+        }
 
+        // static event handlers
         private void OnLibraryWordRemoved(int index, Word word)
         {
             RemoveLibraryDisplayItem(index);
         }
-        
-        public void UpdateLibraryDisplay()
+
+        // Update List from Library
+        private void UpdateLibraryDisplay()
         {
-            for (int i = 0; i < WordLibrary.Words.Count; i++)
+            for (int i = 0; i < GetSource().Count; i++)
             {
                 if (i < WordLibraryList.Children.Count)
                 {
                     UpdateLibraryDisplayItem(i);
                     continue;
                 }
-                CreateLibraryDisplayItem(WordLibrary.Words[i]);
+                CreateLibraryDisplayItem(GetSource()[i]);
             }
 
             for (int i = WordLibraryList.Children.Count; i > WordLibrary.Words.Count ; i--)
@@ -39,7 +84,7 @@ namespace TunicGlyphLibrary.Windows.Elements
         }
         private void UpdateLibraryDisplayItem(int index)
         {
-            ((WordLibraryItem)WordLibraryList.Children[index]).Word = WordLibrary.Words[index];
+            ((WordLibraryItem)WordLibraryList.Children[index]).Word = GetSource()[index];
         }
         private void CreateLibraryDisplayItem(Word word)
         {
@@ -60,6 +105,13 @@ namespace TunicGlyphLibrary.Windows.Elements
             WordLibraryList.Children.Remove(item);
         }
         
+        // UI event Handlers
+        private void ClearFilterByn_OnClick()
+        {
+            ClearFilter();
+        }
+
+        private List<Word> GetSource() => isFiltered ? FilteredWordList : WordLibrary.Words;
         
     }
 }
