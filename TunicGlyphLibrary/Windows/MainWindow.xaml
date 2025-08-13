@@ -8,10 +8,11 @@
         mc:Ignorable="d"
         AllowsTransparency="True"
         Background="Transparent"
-        Title="MainWindow" Height="700" Width="950"
+        Title="Tunic Language Companion" Height="700" Width="950"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
         ResizeMode="CanMinimize"
+        Icon="../../Resources/icon.png"
         Loaded="MainWindow_OnLoaded">
     
     <Border CornerRadius="8" BorderBrush="Transparent" BorderThickness="1">

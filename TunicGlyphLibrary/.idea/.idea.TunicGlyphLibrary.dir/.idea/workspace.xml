@@ -8,80 +8,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49f8f725-a0eb-4fff-8455-10613c15799b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../TunicGlyphLibrary.sln.DotSettings.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.TunicGlyphLibrary.dir/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.TunicGlyphLibrary.dir/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.TunicGlyphLibrary.dir/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.TunicGlyphLibrary.dir/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.TunicGlyphLibrary.dir/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fonts/Chalkboard.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fonts/DazHandwriting.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fonts/Espressonal.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fonts/Papernotes.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MouseCapture.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Windows/Elements/StyledScrollBar.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Windows/Elements/StyledScrollBar.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/Fonts/Chalkboard-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/Fonts/DazHandwriting.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/Fonts/Espressonal.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/Fonts/Papernotes.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/TunicGlyphLibrary_MarkupCompile.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/TunicGlyphLibrary_MarkupCompile.lref" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledScrollBar.baml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledScrollBar.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledScrollBar.g.i.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/EdCanHack.Unglide.2.0.0.0/.signature.p7s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/EdCanHack.Unglide.2.0.0.0/EdCanHack.Unglide.2.0.0.0.nupkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/EdCanHack.Unglide.2.0.0.0/lib/portable-net45+win+wpa81+wp80/Unglide.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.9.0.1/.signature.p7s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.9.0.1/Newtonsoft.Json.9.0.1.nupkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.9.0.1/lib/net20/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.9.0.1/lib/net20/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.9.0.1/lib/net35/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.9.0.1/lib/net35/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.9.0.1/lib/net40/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.9.0.1/lib/net40/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.9.0.1/lib/net45/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.9.0.1/lib/net45/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.9.0.1/lib/netstandard1.0/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.9.0.1/lib/netstandard1.0/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.9.0.1/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.9.0.1/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.9.0.1/tools/install.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/App.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/Resources/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/Resources/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/Tunic Language Companion.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Release/Windows/Editors/WordEditorControl.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Release/Windows/Elements/DefinitionPanel.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Release/Windows/Elements/DefinitionPanelCloseButton.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Release/Windows/Elements/GlyphCountMinusButton.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Release/Windows/Elements/GlyphCountPlusButton.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Release/Windows/Elements/StyledMiniButton.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Release/Windows/Elements/StyledScrollBar.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Release/Windows/Elements/StyledTextBox.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Release/Windows/Elements/WordLibraryItem.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Release/Windows/MainWindow.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Release/Windows/Panels/DefinitionsEditorControl.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Release/Windows/Panels/LanguageGlyphControl.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Release/Windows/Panels/LanguageWordControl.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Release/Windows/Panels/WordLibraryDisplay.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/1082ceeb-781e-41a8-afae-b81fd07ea9bb.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/18141819-cc11-48a1-8e54-ca8d453e5c74.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/2d70a099-1361-4daa-be8a-ab384a174634.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/55596d59-c5f9-481f-9d29-56b2d9e180ee.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/612756b2-886d-4966-8157-2b0b6948c6ac.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/7d8ea5ba-519e-49a9-b139-7054cafe89d9.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/8c9f61f3-8d49-47ac-aa91-75a459481b7e.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/a46c8280-bb06-4b83-b76a-d8da1e9dde21.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/a4b8084e-f19f-4d41-b423-eb2c9bf524e4.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/ac95b7e1-d182-4bd8-92ed-412c559eee22.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/ad0c0275-3206-4f18-8ff1-d08bf4902f65.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/b7af6f16-6498-432e-ae12-abff5cf7dff7.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/d59dd934-93a9-4cea-b90a-b1fa6ef680a2.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/d7981268-ec7e-4535-9b58-baf1a4614ece.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/ed43e03a-64cd-4cfe-a74d-263522ee3e24.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/edd63f29-db74-4a4f-8d36-482da54462be.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/f7480885-4c81-4c44-be83-8071fa543f7e.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/f769b260-75a4-42ee-a891-77cae7dc266e.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/TunicGlyphLibrary/FileContentIndex/f8828b2f-eb5d-4641-ba42-25604f135795.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TunicGlyphLibrary.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/../TunicGlyphLibrary.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TunicGlyphLibrary.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TunicGlyphLibrary.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TunicGlyphLibrary.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TunicGlyphLibrary.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Editors/WordEditorControl.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Editors/WordEditorControl.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Editors/WordEditorControl.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Editors/WordEditorControl.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Elements/DefinitionPanel.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Elements/DefinitionPanel.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Elements/DefinitionPanel.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Elements/DefinitionPanel.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Elements/DefinitionPanelCloseButton.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Elements/DefinitionPanelCloseButton.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Elements/DefinitionPanelCloseButton.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Elements/DefinitionPanelCloseButton.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Elements/GlyphCountMinusButton.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Elements/GlyphCountMinusButton.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Elements/GlyphCountMinusButton.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Elements/GlyphCountMinusButton.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Elements/GlyphCountPlusButton.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Elements/GlyphCountPlusButton.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Elements/GlyphCountPlusButton.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Elements/GlyphCountPlusButton.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Elements/StyledButton.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Elements/StyledButton.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Elements/StyledButton.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Elements/StyledButton.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Elements/StyledTextBox.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Elements/StyledTextBox.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Elements/StyledTextBox.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Elements/StyledTextBox.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Elements/WordLibraryItem.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Elements/WordLibraryItem.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Elements/WordLibraryItem.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Elements/WordLibraryItem.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Windows/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/MainWindow.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/MainWindow.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Panels/DefinitionsEditorControl.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Panels/DefinitionsEditorControl.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Panels/DefinitionsEditorControl.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Panels/DefinitionsEditorControl.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Panels/LanguageGlyphControl.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Panels/LanguageGlyphControl.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Panels/LanguageGlyphControl.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Panels/LanguageGlyphControl.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Panels/WordLibraryDisplay.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Panels/WordLibraryDisplay.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/Panels/WordLibraryDisplay.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/Panels/WordLibraryDisplay.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/Resources/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Resources/background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/SavedWords/words.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/SavedWords/words.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/TunicGlyphLibrary.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/TunicGlyphLibrary.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/TunicGlyphLibrary.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/TunicGlyphLibrary.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/App.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/App.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/App.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/App.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/Unglide.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Release/SavedWords/words.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Release/SavedWords/words.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Release/TunicGlyphLibrary.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Release/TunicGlyphLibrary.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Release/TunicGlyphLibrary.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Release/TunicGlyphLibrary.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Release/Unglide.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/TunicGlyphLibrary.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/TunicGlyphLibrary.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/TunicGlyphLibrary.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/TunicGlyphLibrary.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/TunicGlyphLibrary.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/TunicGlyphLibrary.exe" afterDir="false" />
@@ -89,42 +65,35 @@
       <change beforePath="$PROJECT_DIR$/obj/Debug/TunicGlyphLibrary.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/TunicGlyphLibrary.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/TunicGlyphLibrary_Content.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/TunicGlyphLibrary_Content.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/TunicGlyphLibrary_Content.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/TunicGlyphLibrary_Content.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/TunicGlyphLibrary_MarkupCompile.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/TunicGlyphLibrary_MarkupCompile.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Editors/WordEditorControl.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Editors/WordEditorControl.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Editors/WordEditorControl.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Editors/WordEditorControl.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Editors/WordEditorControl.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Editors/WordEditorControl.g.i.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/DefinitionPanel.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/DefinitionPanel.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/DefinitionPanel.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/DefinitionPanel.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/DefinitionPanel.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/DefinitionPanel.g.i.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/DefinitionPanelCloseButton.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/DefinitionPanelCloseButton.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/DefinitionPanelCloseButton.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/DefinitionPanelCloseButton.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/DefinitionPanelCloseButton.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/DefinitionPanelCloseButton.g.i.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/GlyphCountMinusButton.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/GlyphCountMinusButton.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/GlyphCountMinusButton.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/GlyphCountMinusButton.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/GlyphCountMinusButton.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/GlyphCountMinusButton.g.i.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/GlyphCountPlusButton.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/GlyphCountPlusButton.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/GlyphCountPlusButton.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/GlyphCountPlusButton.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/GlyphCountPlusButton.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/GlyphCountPlusButton.g.i.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledButton.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledButton.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledButton.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledButton.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledButton.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledButton.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledMiniButton.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledMiniButton.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledScrollBar.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledScrollBar.baml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledTextBox.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledTextBox.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledTextBox.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledTextBox.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledTextBox.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/StyledTextBox.g.i.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/WordLibraryItem.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/WordLibraryItem.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/WordLibraryItem.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/WordLibraryItem.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Elements/WordLibraryItem.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Elements/WordLibraryItem.g.i.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/MainWindow.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/MainWindow.baml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/MainWindow.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/MainWindow.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/MainWindow.g.i.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Panels/DefinitionsEditorControl.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Panels/DefinitionsEditorControl.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Panels/DefinitionsEditorControl.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Panels/DefinitionsEditorControl.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Panels/DefinitionsEditorControl.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Panels/DefinitionsEditorControl.g.i.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Panels/LanguageGlyphControl.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Panels/LanguageGlyphControl.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Panels/LanguageGlyphControl.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Panels/LanguageGlyphControl.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Panels/LanguageGlyphControl.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Panels/LanguageGlyphControl.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Panels/LanguageWordControl.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Panels/LanguageWordControl.baml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Panels/WordLibraryDisplay.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Panels/WordLibraryDisplay.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Panels/WordLibraryDisplay.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Panels/WordLibraryDisplay.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Windows/Panels/WordLibraryDisplay.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Windows/Panels/WordLibraryDisplay.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary.g.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary_Content.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary_Content.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary_Content.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary_Content.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary_MarkupCompile.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary_MarkupCompile.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary_MarkupCompile.lref" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/TunicGlyphLibrary_MarkupCompile.lref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/Windows/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/Windows/MainWindow.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/Windows/MainWindow.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/Windows/MainWindow.g.i.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,26 +109,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\PixelHole\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\PixelHole\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\PixelHole\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\PixelHole\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\PixelHole\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\PixelHole\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="TunicGlyphLibrary" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -191,6 +161,7 @@
       <workItem from="1718633174106" duration="45000" />
       <workItem from="1718649721562" duration="2103000" />
       <workItem from="1718698686457" duration="2000" />
+      <workItem from="1741112630798" duration="233000" />
     </task>
     <servers />
   </component>

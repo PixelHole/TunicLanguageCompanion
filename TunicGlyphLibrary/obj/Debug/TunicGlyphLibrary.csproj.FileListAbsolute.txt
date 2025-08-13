@@ -15,7 +15,6 @@ M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Debug\GeneratedInternalTy
 M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Debug\TunicGlyphLibrary_Content.g.cs
 M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Debug\Windows\MainWindow.g.cs
 M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Debug\Windows\MainWindow.baml
-M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\bin\Debug\Unglide.dll
 M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Debug\App.g.cs
 M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Debug\TunicGlyphLibrary.csproj.CopyComplete
 M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Debug\Windows\Elements\DefinitionPanel.g.cs

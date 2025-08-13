@@ -19,6 +19,7 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/defboxend2.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/defboxmid.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/editicon.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icon.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/libraryitemframe.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/libraryitemsidepanel.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/lineicon.png")]

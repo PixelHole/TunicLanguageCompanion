@@ -2,7 +2,6 @@ M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\bin\Release\TunicGlyphLibrary
 M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\bin\Release\TunicGlyphLibrary.exe
 M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\bin\Release\TunicGlyphLibrary.pdb
 M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\bin\Release\Newtonsoft.Json.dll
-M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\bin\Release\Unglide.dll
 M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\bin\Release\Newtonsoft.Json.xml
 M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Release\TunicGlyphLibrary.csproj.AssemblyReference.cache
 M:\Rider projs\TunicGlyphLibrary\TunicGlyphLibrary\obj\Release\TunicGlyphLibrary.csproj.SuggestedBindingRedirects.cache
